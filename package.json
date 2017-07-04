@@ -5,7 +5,7 @@
   "main": "image-resize.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "webpack -p --progress --colors",
+    "release": "webpack -p --progress --colors; cp ./image-resize.min.js $HOME/era-core/components/era-edit/vendor/image-resize.min.js",
     "dev": "webpack --progress --colors --watch",
     "lint": "eslint --ext js,es6 src",
     "fixlint": "eslint --fix --ext js,es6 src"
